@@ -1,0 +1,161 @@
+body {
+    background: gray;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.background {
+  width: 9vh;
+  background-color: #760c0c;
+  height: 100vh;
+}
+.menu-toggle {
+  display: none;
+}
+.about-btn a{
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+}
+.fa-bookmark{
+  cursor: pointer;
+  margin-top: 55px;
+  padding-left: 20px;
+  font-size: 24px;
+  color: white;
+  display: flex;
+  height: 0px;
+  width: 0px;
+}
+.fa-circle-question{
+  margin-top: 570px;
+  padding-left: 18px;
+  font-size: 24px;
+  color: white;
+  display: flex;
+  height: 0;
+  width: 0;
+}
+.menu-btn{
+  cursor: pointer;
+  display: flex;
+  font-size: 24px;
+  margin-top: 25px;
+  margin-left: 19px;
+  height: 0px;
+  width: 0px;
+}
+.close-btn{
+position: relative;
+top: 20px;
+margin-left: 5px;
+font-size: 24px;
+color: white;
+cursor: pointer;
+height: 0px;
+width: 0px;
+left: 15px;
+}
+
+.sidenav {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -250px;
+  background-color: #760c0c;
+  padding-top: 0px;
+  transition: .5s;
+}
+
+.sidenav.active {
+  left: 0;
+}
+
+.sidenav a {
+  padding: 20px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.main {
+  margin-left: 0;
+  padding: 2px;
+  flex-grow: 1;
+}
+
+.search-input {
+  margin-top: 30px;
+  padding: 5px;
+  margin-left: 14px;
+  width: 200px;
+}
+
+#menu-toggle:checked ~ .sidenav {
+  left: 0;
+}
+
+.container {
+    position: relative;
+    padding: 20px;
+}
+
+#places {
+    padding: 5px 0; /* Adjusted vertical padding */
+    margin-top: 6px; /* Added margin for separation */
+}
+
+#places li {
+    list-style: none;
+    border-radius: 3px;
+    padding: 10px 0; /* Adjusted vertical padding */
+    cursor: pointer;
+    margin-bottom: 6px; /* Added margin for separation */
+}
+
+#placeList {
+    max-height: 500px; /* Corrected max-height property */
+    overflow-y: scroll;
+    background: white;
+    float: left;
+}
+
+.place-container {
+    background: white;
+    position: absolute;
+    top: 0;
+    left: calc(
+        65% + 20px
+    ); /* Adjusted to place it to the right of the placeList */
+    width: calc(35% - 20px);
+    height: 100vh; /* Set to cover the entire viewport height */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    display: none;
+}
+.place-container.move-right {
+    left: calc(
+        100% - 250px
+    ); /* Adjusted to place it to the right of the placeList */
+    transition: left 0.5s; /* Added transition for smooth movement */
+}
+
+ img{
+     height=250px;
+    width=250px;
